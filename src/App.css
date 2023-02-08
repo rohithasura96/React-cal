@@ -1,38 +1,88 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh !important;
+  background: #7b7577;
+}
+.App{
+  width: 300px;
+  height: 500px;
+  display: grid;
+  justify-content: center !important;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(4, 37, 43);
+  border-radius: 20px;
+  box-shadow: inset 10px 10px 1px rgb(28, 52, 72, 0.182),
+ inset -10px -10px 1px rgba(28, 52, 72, 0.182);
+  padding: 10px;
+}
+
+.input{
+  background: rgb(48, 120, 202);
+  border: none;
+  box-shadow: inset 5px 5px 1px rgb(28, 52, 72, 0.182),
+  inset -5px -5px 1px rgba(34, 101, 90, 0.182);
+  height: 80px;
+  width: 240px;
+  border-radius: 10px;
+  font-size: 2em;
+  padding: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+  outline: none;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button{
+ width: 50px;
+ height: 50px;
+ margin: 5px;
+ color: rgb(26, 128, 175);
+ font-size: 23px;
+ font-weight: 600;
+ border: none;
+ border-radius: 10px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.row1 {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row: 2;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.row1 :nth-child(1){
+  
+  margin: 5px;
+  background: red;
+  color: #fff;
 }
+.row1 :nth-child(16){
+  
+  margin: 5px;
+  background: rgb(34, 123, 218);
+  color: #fff;
+ 
 
-.App-link {
-  color: #61dafb;
+ 
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rowend :nth-child(3){
+  background: rgb(217, 171, 18);
+  width: 108px;
+}
+.rowend {
+  margin-top: -44px;
 }
